@@ -1,0 +1,20 @@
+Старт функции <__main__.MyTimeTracerManager object at 0x00B21E68>: 1590167298.2086024: 
+Старт функции MyTimeTracerManager: 1590167460.2654424: 
+Старт функции MyTimeTracerManager: 1590167511.4241576: 
+Старт функции MyTimeTracerManager: 1590167601.8374186: 
+Старт функции MyTimeTracerManager: 1590167683.5650105: 
+Старт функции MyTimeTracerManager: 1590167743.9167595: 
+Конец функции MyTimeTracerManager: 1590167743.9167595: 
+Время работы функции MyTimeTracerManager: 0.0: 
+Старт функции MyTimeTracerManager: 1590167857.7512794: 
+Конец функции MyTimeTracerManager: 1590167857.7512794: 
+Время работы функции MyTimeTracerManager: 0.0: 
+Старт функции MyTimeTracerManager: 1590167910.3630633: 
+Конец функции MyTimeTracerManager: 1590167910.3630633: 
+Время работы функции MyTimeTracerManager: 0.0: 
+Старт функции MyTimeTracerManager: 1590168019.4094899: 
+Конец функции MyTimeTracerManager: 1590168019.4094899: 
+Время работы функции MyTimeTracerManager: 0.0: 
+Старт функции MyTimeTracerManager: 1590168037.3647625: 
+Конец функции MyTimeTracerManager: 1590168037.3647625: 
+Время работы функции MyTimeTracerManager: 0.0: 
