@@ -56,4 +56,4 @@ def get_shop_list_by_dishes(dishes, persons:int):
         print("Вы ошиблись в названии блюда, проверьте ввод")
 
 if __name__ == '__main__':
-    get_shop_list_by_dishes(['Омлет', 'Фахитос'], 10)
+    get_shop_list_by_dishes(['Омлет', 'Фахитос'], 10000000)
