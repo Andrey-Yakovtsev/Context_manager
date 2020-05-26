@@ -1,8 +1,8 @@
 
 
 from pprint import pprint
-from time import time
-start = time()
+import time
+start = time.time()
 
 
 
@@ -10,7 +10,7 @@ def time_tracer(function_to_trace):
 
     function_to_trace
 
-
+###### Мжно здесь сделать свой менеджер открытия и закрытия внуьри которого будет жить счетчик старта и финиша!
 
 
 def dict_collector(file_path):
@@ -18,6 +18,7 @@ def dict_collector(file_path):
         menu = {}
         for line in file_work:
             dish_name = line[:-1]
+            time.sleep(1)
             counter = file_work.readline().strip()
             list_of_ingridient = []
             for i in range(int(counter)):
@@ -58,17 +59,6 @@ def get_shop_list_by_dishes(dishes, persons:int):
 
 get_shop_list_by_dishes(['Омлет', 'Фахитос'], 10)
 
-# time_tracer(get_shop_list_by_dishes(['Омлет', 'Фахитос'], 1000000))
-# time_tracer(get_shop_list_by_dishes(['Омлет', 'Фахитос'], 100000000))
-# time_tracer(get_shop_list_by_dishes(['Омлет', 'Фахитос'], 100000000))
-# time_tracer(get_shop_list_by_dishes(['Омлет', 'Фахитос'], 100000000))
-# time_tracer(get_shop_list_by_dishes(['Омлет', 'Фахитос'], 100000000))
-# time_tracer(get_shop_list_by_dishes(['Омлет', 'Фахитос'], 100000000))
-# time_tracer(get_shop_list_by_dishes(['Омлет', 'Фахитос'], 100000000))
-# time_tracer(get_shop_list_by_dishes(['Омлет', 'Фахитос'], 100000000))
-# time_tracer(get_shop_list_by_dishes(['Омлет', 'Фахитос'], 100000000))
-
-
-finish = time()
+finish = time.time()
 runtime = finish - start
 print(runtime)
