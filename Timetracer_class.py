@@ -1,6 +1,6 @@
 from datetime import datetime
-from Cook_book import dict_collector
-from Cook_book import get_shop_list_by_dishes
+from Cook_book import dict_collector, starter
+
 
 class MyTimeTracerManager:
 
@@ -30,6 +30,7 @@ class MyTimeTracerManager:
 
 
 if __name__ == '__main__':
+    starter()
     with MyTimeTracerManager('my.log') as log:
         log.write_trace_log(dict_collector)
-        # log.write_trace_log(get_shop_list_by_dishes)
+

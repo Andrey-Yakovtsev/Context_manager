@@ -1,17 +1,15 @@
 
-
+from datetime import datetime
 from pprint import pprint
 import time
-start = time.time()
 
 
-
-def time_tracer(function_to_trace):
-
-    function_to_trace
-
-###### Мжно здесь сделать свой менеджер открытия и закрытия внуьри которого будет жить счетчик старта и финиша!
-
+def starter():
+    start = time.time()
+    dict_collector('reciepts_initial.txt')
+    finish = time.time()
+    runtime = finish - start
+    print(runtime)
 
 def dict_collector(file_path):
     with open(file_path, 'r') as file_work:
@@ -35,7 +33,8 @@ def dict_collector(file_path):
 
     return(menu)
 
-dict_collector('reciepts_initial.txt')
+
+
 
 def get_shop_list_by_dishes(dishes, persons:int):
     menu = dict_collector('reciepts_initial.txt')
@@ -56,9 +55,5 @@ def get_shop_list_by_dishes(dishes, persons:int):
     except KeyError:
         print("Вы ошиблись в названии блюда, проверьте ввод")
 
-
-get_shop_list_by_dishes(['Омлет', 'Фахитос'], 10)
-
-finish = time.time()
-runtime = finish - start
-print(runtime)
+if __name__ == '__main__':
+    get_shop_list_by_dishes(['Омлет', 'Фахитос'], 10)
